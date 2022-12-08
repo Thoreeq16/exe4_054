@@ -8,11 +8,11 @@ namespace Exercise4
 {
     class Node
     {
-        public int info;
+        public int thoriq;
         public Node next;
         public Node(int i, Node n)
         {
-            info = i;
+            thoriq = i;
             next = n;
         }
     }
@@ -41,7 +41,7 @@ namespace Exercise4
         }
         public void pop()
         {
-            Console.WriteLine("\nThe pooped element is: " + top.info);
+            Console.WriteLine("\nThe pooped element is: " + top.thoriq);
             top = top.next; //Make top point to the next  node in sequence
         }
         public void display()
@@ -54,7 +54,7 @@ namespace Exercise4
                 //Traverse the list from beggining till end
                 for (tmp = top; tmp != null; tmp = tmp.next)
                 {
-                    Console.WriteLine(tmp.info);
+                    Console.WriteLine(tmp.thoriq);
                 }
                 Console.WriteLine();
             }
