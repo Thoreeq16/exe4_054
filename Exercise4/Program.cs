@@ -77,7 +77,7 @@ namespace Exercise4
                 {
                     case '1':
                         Console.Write("\nEnter a Number: ");
-                        int num = Convert.ToInt32(Console.ReadLine());
+                        int num = (int)Convert.ToInt64(Console.ReadLine());
                         s.push(num);
                         break;
                     case '2':
